@@ -8,5 +8,5 @@ else
   /root/.acme.sh/acme.sh --issue --standalone -d SI.endpoint --server https://SI.ca/acme/acme/directory --ca-bundle $(step path)/certs/root_ca.crt
 fi
 update_loop.sh &
-/usr/bin/krakend run --config /tmp/krakend.json
+/usr/bin/krakend run --config /etc/krakend.json
 
